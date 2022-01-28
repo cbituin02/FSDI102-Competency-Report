@@ -1,0 +1,39 @@
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table.test-table {
+    background-color: rgba(185, 179, 179, 0.322)
+}
+table.test-table td {
+    border: 1px solid black;
+    padding: 1rem;
+}
+td.error{
+    color: red;
+}
+th {
+    border: 1px solid black;
+}
+.text-table p {
+    margin: -10px;
+    padding: 10px;
+    color: black;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    height: 4rem;
+    border: 1px solid black;
+    flex-wrap: wrap;
+}
+.flex-child {
+    background-color: green;
+    color: greenyellow;
+    border: .5px solid Black;
+    padding: 5px;
+    flex-basis: 20px;
+}

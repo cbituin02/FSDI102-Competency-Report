@@ -1,0 +1,276 @@
+/*global*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+:root {
+    --primary:#ffcc00;
+}
+html {
+    font-size: 62.5%;/*1rem=1-px*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: black;
+    font-family: "Roboto", sans-serif;
+}
+img {
+    max-width: 100%;
+
+}
+a {
+    text-decoration: none;
+}
+
+/*utilities*/
+
+.read-btn {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: .3rem;
+    font-weight: 700;
+}
+
+/*menu*/
+
+nav.menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    height: 35px;
+    padding: 10px 10px 0 20px;
+}
+nav.menu img.big-logo {
+    display: block;
+    height: 30px;
+    padding-left: 1rem;
+}
+nav.menu img.small-logo {
+    display: none;
+    height: 30px;
+    padding-bottom: 5px;
+    padding-top: -3px;
+}
+nav.menu a {
+    margin-right: 30px;
+}
+a.login-link {
+    color: black;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+a.subs-link {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    padding: 18px;
+    letter-spacing: 3px;
+}
+a.arrows-link {
+    display: none;
+    color: black;
+    font-weight: 700;
+    font-size: 12px;
+}
+a.search-link,
+a.menu-link {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+a.renew-link {
+    color: black;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    border-bottom: 2px solid var(--primary);
+}
+
+/*header*/ 
+
+header {
+    text-align: center;
+    margin: 20px;
+    color: white;
+}
+header p {
+    font-size: 20px;
+}
+header p span {
+    border-bottom: 2px solid var(--primary);
+}
+header span:hover{
+    cursor: pointer;
+    background-color: black;
+    box-shadow: inset 88px 0 0 0 #ffcc00;
+    transition: .1s ease;
+    outline: none;
+}
+
+/*main-news*/
+main {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+.main-news {
+    position: relative; /*parent*/
+    width: 95%;
+    margin: 1rem auto;
+    margin-top: 6.3rem;
+}
+.main-news-text {
+    position: absolute; /*child*/
+    top: 350px;
+    left: 30px;
+    color: white;
+}
+.main-news-text p {
+    font-size: 3.5rem;
+}
+.main-news-text p.title {
+    font-size: 4.5rem;
+    margin: 1rem 0; /*tb rl*/
+    color: white;
+}
+.main-news-text p.read-btn {
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: .3rem;
+    font-weight: 700;
+}
+.main-news-text p.read-btn:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.main-news-text h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin: 1rem 0;
+}
+.main-news-text h3 span {
+    font-weight: 300;
+    color: gray;
+}
+.main-news-text h3:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*secondary.news*/
+
+.secondary-news-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.secondary-news{
+    height: 45%;
+    width: 45%;
+    margin: 1rem 0;
+}
+.secondary-news-img img {
+    height: 50rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+.secondary-news-text {
+    height: 10rem;
+    width: 100%;
+    display: block;
+    background-color: white;
+    padding-bottom: 1rem;
+}
+.secondary-news-text h3 {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin: 1rem 0;
+    color: grey;
+}
+.secondary-news-text p {
+    font-size: 1.8rem;
+    font-weight: 700;
+    word-spacing: 0.5rem;
+    color: black;
+}
+.secondary-news-text p.read-btn {
+    padding-top: 1rem;
+    font-size: 1.3rem;
+}
+
+/*flex main*/
+
+.flex-conainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/*todays picks*/
+
+.todays-picks-text h2 {
+    text-transform: uppercase;
+    margin: 8rem 2rem;
+    margin-bottom: 2rem;
+    background-color: rgba(153, 60, 60, 0);
+    box-shadow: inset 2px 0 0 0 #ffcc00;
+    transition: .1s ease;
+    outline: none;
+}
+.todays-picks-text h4 {
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin: 1rem auto;
+}
+.todays-picks-text{
+    color: white;
+    font-size: 13px;
+    letter-spacing: .2rem;
+    padding: 1rem auto;
+    display: block;
+    width: 15%;
+    height: 15%;
+}
+.todays-picks-text img {
+    height: 10rem;
+    width: 50%;
+}
+
+/*flex today's picks*/
+
+.flex-container-second {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 21.2;
+    width: 32rem;
+    flex-wrap: wrap;
+}
+.flex-child-second {
+    flex-direction: row;
+    padding: 20px;
+    flex-basis: 20px;
+    height: 21.2;
+    width: 28rem;
+}
+.todays-picks-text-container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid gray;
+    height: 50%;
+    width: 50%;
+}
